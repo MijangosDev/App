@@ -12,7 +12,7 @@ export default function Products() {
     (async () => {
       const arrayProductos = [];
       try {
-        const querySnapshot = await getDocs(collection(db, "product")); // Consultar la colección "productos"
+        const querySnapshot = await getDocs(collection(db, "product")); 
         querySnapshot.forEach((doc) => {
           const data = doc.data();
           data.id = doc.id;
@@ -26,7 +26,7 @@ export default function Products() {
     })();
   }, []);
 
-  // Si estamos cargando los productos, mostrar el indicador de carga
+
   if (loading) {
     return (
       <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
@@ -40,18 +40,18 @@ export default function Products() {
       <FlatList
         data={productos}
         renderItem={({ item }) => {
-          console.log("Producto:", item); // Verificar los datos en la consola
+          console.log("Producto:", item); 
           return (
             <CardListProductos
-              img={item.Img || "https://via.placeholder.com/150"} // Imagen predeterminada si no existe
-              name={item.Name || "Producto sin nombre"} // Valor por defecto si no existe
-              description={item.Description || "Descripción no disponible"} // Valor por defecto
-              price={item.Price || "0.00"} // Valor por defecto si no existe
+              img={item.Img || "https://via.placeholder.com/150"} 
+              name={item.Name || "Producto sin nombre"} 
+              description={item.Description || "Descripción no disponible"} 
+              price={item.Price || "0.00"} 
             />
           );
         }}
         keyExtractor={(item) => item.id}
-        numColumns={2} // 2 productos por fila
+        numColumns={2} 
       />
     </View>
   );
