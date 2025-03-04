@@ -1,5 +1,8 @@
 {
   "expo": {
+    "android":{
+      "package": "utez.edu.mx"
+    },
     "name": "MijangosApp",
     "slug": "MijangosApp",
     "version": "1.0.0",

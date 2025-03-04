@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "746065902136",
+    "project_id": "mijangosapp",
+    "storage_bucket": "mijangosapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:746065902136:android:10974b3d10090a160e04cd",
+        "android_client_info": {
+          "package_name": "utez.edu.mx"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3M5glVXOReVKbrJmRMukIk99n6uOpXlg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
